@@ -1,0 +1,126 @@
+body {
+    background-color: #0b0f19;
+    color: #f3f4f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 650px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #f3f4f6;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 1rem;
+}
+
+.contactme {
+    display: flex;
+    gap: 20px;
+}
+
+.contactme a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.contactme a:hover {
+    color: #f3f4f6;
+}
+
+.about.page h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.about.page p {
+    color: #9ca3af;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.about.page div {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.about.page div a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+.deviantart, .instagram, .bluesky, .email {
+    color: #9ca3af;
+}
+
+.about.page div a.x\.com {
+    color: #9ca3af;
+}
+
+.deviantart:hover, .instagram:hover, .bluesky:hover, .email:hover, .about.page div a.x\.com:hover {
+    color: #f3f4f6;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contactme {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about.page {
+        text-align: center;
+    }
+
+    .about.page div {
+        align-items: center;
+    }
+}
