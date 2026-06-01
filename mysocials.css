@@ -82,7 +82,7 @@ body {
     width: fit-content;
 }
 
-.deviantart, .instagram, .bluesky, .email {
+.deviantart, .instagram, .bluesky, .email, .discord, .x.com {
     color: #9ca3af;
 }
 
@@ -90,7 +90,7 @@ body {
     color: #9ca3af;
 }
 
-.deviantart:hover, .instagram:hover, .bluesky:hover, .email:hover, .about.page div a.x\.com:hover {
+.deviantart:hover, .instagram:hover, .bluesky:hover, .email:hover, .about.page div a.x\.com:hover, .x.com {
     color: #f3f4f6;
 }
 
