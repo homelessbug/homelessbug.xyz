@@ -1,26 +1,26 @@
 body {
     background-color: #0b0f19;
     color: #f3f4f6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: hack, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     margin: 0;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
 }
 
-.main {
+.top_main_div {
     width: 100%;
     max-width: 650px;
 }
 
-.top {
+.top_panel {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
 
-.profile-header {
+.nick7red_index {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,45 +28,114 @@ body {
     color: #f3f4f6;
 }
 
-.avatar {
+.ava {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.username {
+.homelessbug {
     font-size: 1rem;
 }
 
-.contactme {
+.s8red {
     display: flex;
     gap: 20px;
 }
 
-.contactme a {
+.s8red a {
     color: #9ca3af;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s ease;
 }
 
-.contactme a:hover {
-    color: #f3f4f6;
-}
 
-.support h1 {
+.wlc h1 {
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 0;
     margin-bottom: 16px;
 }
 
-.support .subtitle {
+.wlc p {
     color: #9ca3af;
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.contactmee {
+    display: flex;
+    gap: 20px;
+}
+
+.contactmee a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.deviantart, .instagram, .bluesky, .email, .discord, .x.com {
+    color: #9ca3af;
+}
+
+.deviantart:hover, .instagram:hover, .bluesky:hover, .email:hover, .about.page div a.x\.com:hover, .x.com {
+    color: #f3f4f6;
+}
+
+.links h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.links p {
+    color: #9ca3af;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.links div a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+    width: fit-content;
+    color: #9ca3af;
+}
+
+.links a:hover,
+.s8red a:hover {
+    color: #f3f4f6;
+}
+
+.wlc p.smwc {
+    color: #9ca3af;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-bottom: 35px;
 }
 
@@ -76,14 +145,16 @@ body {
     margin-bottom: 40px;
 }
 
-.crypto-ltc, .crypto-btc {
+.crypto .ltc, 
+.crypto .btc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 240px;
 }
 
-.ltc, .btc {
+.crypto img.ltc, 
+.crypto img.btc {
     width: 220px;
     height: 220px;
     object-fit: contain;
@@ -91,7 +162,8 @@ body {
     margin-bottom: 14px;
 }
 
-.crypto-address {
+.ltc_a, 
+.btc_a {
     color: #6b7280;
     font-size: 0.85rem;
     line-height: 1.4;
@@ -100,57 +172,20 @@ body {
     font-family: monospace;
 }
 
-.support .note {
+.wlc p.aw {
     color: #6b7280;
     font-size: 0.9rem;
     margin-top: 20px;
 }
 
-.support .note a {
+.wlc p.aw a {
     color: #9ca3af;
     text-decoration: none;
     border-bottom: 1px dashed #4b5563;
     transition: all 0.2s ease;
 }
 
-.support .note a:hover {
+.wlc p.aw a:hover {
     color: #f3f4f6;
     border-color: #f3f4f6;
-}
-
-@media (max-width: 600px) {
-    body {
-        padding-top: 60px;
-    }
-
-    .top {
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 50px;
-    }
-
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contactme {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .support {
-        text-align: center;
-    }
-
-    .crypto {
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-    }
-
-    .crypto-ltc, .crypto-btc {
-        align-items: center;
-    }
 }
