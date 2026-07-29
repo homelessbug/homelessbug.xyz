@@ -6,6 +6,26 @@
     <meta name = "description" content = "homelessbug">
     <meta name = "keywords" content = "homelessbug, homelessbug.xyz">
     <link rel = "stylesheet" href = "main.css">
+    <script>
+        const LINKS_URL = 'https://raw.githubusercontent.com/homelessbug/links/main/links.json';
+        fetch(LINKS_URL)
+        .then(res => res.json())
+        .then(data => {
+        document.querySelectorAll('[data-link]').forEach(el => {
+        const key = el.getAttribute('data-link');
+        const value = key.split('.').reduce((obj, i) => obj && obj[i], data);
+        
+        if (value) {
+          if (el.tagName === 'A') {
+            el.href = value;
+          } else {
+            el.innerText = value;
+          }
+        }
+      });
+    })
+       .catch(err => console.error('Error fetching links:', err));
+    </script>
 </head>
 <body>
     <div class = "top_main_div">
@@ -25,17 +45,17 @@
             <h1> Welcome to homelessbug.xyz/supportme </h1>
             <p class = "smwc"> support me with a crypto </p>
             
-            <div class = "crypto">
-                <div class = "ltc">
-                    <img src = "img/ltc.jpg" class="ltc" alt="Litecoin QR">
-                    <p class = "ltc_a">ltc1qecsdgt3z0mlg8m03mjgrsshjqdaez8fvwnyy3y</p>
-                </div>
-
-                <div class = "btc">
-                    <img src = "img/btc.jpg" class="btc" alt="Bitcoin QR">
-                    <p class = "btc_a">bc1q8e43m3l50w8ra9r5c5fs23jze3l5c763qj8fef</p>
-                </div>
+              <div class="crypto">
+                 <div class="ltc">
+                    <img src="img/ltc.jpg" class="ltc" alt="Litecoin QR">
+                    <p class="ltc_a" data-link="crypto.ltc">ltc1qecsdgt3z0mlg8m03mjgrsshjqdaez8fvwnyy3y</p>
+             </div>
+                  <div class="btc">
+                  <img src="img/btc.jpg" class="btc" alt="Bitcoin QR">
+                  <p class="btc_a" data-link="crypto.btc">bc1q8e43m3l50w8ra9r5c5fs23jze3l5c763qj8fef</p>
             </div>
+      </div>
+
 
             <p class="aw"> note: If you'd like to support me in another way, you can find my contact information <a href="mysocials.html">here</a></p>
         </div>
